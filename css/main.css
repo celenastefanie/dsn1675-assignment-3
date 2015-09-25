@@ -117,6 +117,13 @@ a:hover {
   background-color: #FDF5E6;
 }
 
+.col-1 {
+    clear: left;
+}
+.col-3 {
+  clear: both;
+}
+
 h2 {
   margin: 0em;
   padding: 0.5em;
@@ -227,6 +234,7 @@ dt {
 .atlantis-image {
   opacity: 0.4;
   margin-bottom: 0em;
+  display: block;
 }
 
 .at-head {
@@ -282,6 +290,10 @@ ol ul {
   padding-left: 0.5em;
 }
 
+.this-week ol li {
+  padding: 1%;
+}
+
 .dates-des {
   padding: 0em;
   width: 100%;
@@ -311,8 +323,12 @@ footer {
   list-style-type: none;
 }
 
+@media only screen and (min-width: 15em) {
+
+}
 
 @media only screen and (min-width: 20em) {
+
   h1 {
     font-size: 1em;
   }
@@ -337,6 +353,7 @@ footer {
 
 
 @media only screen and (min-width: 25em) {
+
   h1 {
     font-size: 1.5em;
   }
@@ -414,18 +431,15 @@ footer {
   }
 
   .tickets {
-    width: 60%;
-    margin-left: 20%;
+    max-width: 60%;
   }
 
  .button-prices-one {
-   width: 20%;
-   margin-left: 25%;
+   max-width: 20%;
  }
 
  .button-prices-two {
-   width: 20%;
-   margin-right: 25%;
+   max-width: 20%;
  }
 
   .at-head {
@@ -447,6 +461,12 @@ footer {
 
 
 @media only screen and (min-width: 44em) {
+
+  html {
+    font-size: 115%;
+    line-height: 1.35;
+  }
+
   h1 {
     font-size: 1.75em;
   }
@@ -516,7 +536,7 @@ footer {
   }
 
   .bannerhead {
-    top: 54%;
+    top: 52%;
   }
 
   .bannertext {
@@ -526,9 +546,9 @@ footer {
   }
 
   h2 {
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin: 1% 0 1% 0;
   }
+
   .col-1 {
     width: 40%;
     float: left;
@@ -547,7 +567,6 @@ footer {
     margin: 0 20% 0 25%;
     width: 50%;
   }
-
 
   .button-more {
     width: 80%;
